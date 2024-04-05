@@ -42,4 +42,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/JumpToFour"
         android:text="跳转到第四个页面"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/JumpToFive"
+        android:text="跳转到第五个页面"/>
 </LinearLayout>
