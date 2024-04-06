@@ -42,5 +42,13 @@ public class MainActivity3 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        Button btn6=findViewById(R.id.JumpToSix);
+        btn6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity3.this,MainActivity6.class);
+                startActivity(intent);
+            }
+        });
     }
 }
