@@ -53,4 +53,23 @@
         android:layout_height="wrap_content"
         android:id="@+id/JumpToSix"
         android:text="跳转到第六个页面"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/JumpToSeven"
+        android:text="跳转到第七个页面"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/JumpToactivity_grid_layout"
+        android:text="跳转到第八个页面"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/JumpToactivity_scrollView"
+        android:text="跳转到第九个页面"/>
+
+
+
+
 </LinearLayout>

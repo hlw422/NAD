@@ -50,5 +50,32 @@ public class MainActivity3 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        Button btn7=findViewById(R.id.JumpToSeven);
+        btn7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity3.this,MainActivity7.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button btn8=findViewById(R.id.JumpToactivity_grid_layout);
+        btn8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity3.this,activity_grid_layout.class);
+                startActivity(intent);
+            }
+        });
+        Button btn9=findViewById(R.id.JumpToactivity_scrollView);
+        btn9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity3.this,activity_scrollView.class);
+                startActivity(intent);
+            }
+        });
     }
 }
