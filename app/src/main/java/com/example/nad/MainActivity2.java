@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity2 extends AppCompatActivity {
 
@@ -30,6 +31,16 @@ public class MainActivity2 extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent=new Intent(MainActivity2.this,MainActivity3.class);
                 startActivity(intent);
+            }
+        });
+
+        Button longClickbtn=findViewById(R.id.LongclickMe);
+        longClickbtn.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View view) {
+                Intent intent=new Intent(MainActivity2.this,ComputerActivity.class);
+                startActivity(intent);
+                return  true;
             }
         });
     }
