@@ -43,5 +43,14 @@ public class MainActivity2 extends AppCompatActivity {
                 return  true;
             }
         });
+
+        Button msgTrans=findViewById(R.id.MsgTrans);
+        msgTrans.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(MainActivity2.this,message_pass_activity.class);
+                startActivity(intent);
+            }
+        });
     }
 }

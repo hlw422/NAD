@@ -39,5 +39,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/LongclickMe"
         android:text="长按操作"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/MsgTrans"
+        android:text="消息传递"/>
+
 
 </LinearLayout>
