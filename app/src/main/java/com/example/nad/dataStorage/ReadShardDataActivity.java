@@ -3,6 +3,7 @@ package com.example.nad.dataStorage;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +21,14 @@ public class ReadShardDataActivity extends AppCompatActivity {
 
         SharedPreferences shared = getSharedPreferences("share", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = shared.edit();
-
+        Button btnJumpToLogin=findViewById(R.id.btnJumpToLogin);
+        btnJumpToLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(ReadShardDataActivity.this,LoginRemeberActivity.class);
+                startActivity(intent);
+            }
+        });
 
         Button btnSave = findViewById(R.id.btnRead);
         btnSave.setOnClickListener(new View.OnClickListener() {
